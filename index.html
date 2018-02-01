@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <title>Amazon-UI-Prototyp Smarties</title>    
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+</head>
+
+<body>
+    
+    
+    <div id="header">
+        <a href="#AmazonPrimeNavigation" class="sprunglink" accesskey="1" title="[ALT+1]">Direkt zum normalen AmazonPrime Menü</a>
+        <a href="#AmazonVideoNavigation" class="sprunglink"accesskey="2" title="[ALT+2]">Direkt zum AmazonVideo Menü</a>        
+        <a href="#Inhalt" class="sprunglink" accesskey="3" title="[ALT+3]">Direkt zum Inhalt</a>
+        <a href="#AmazonVideoFilter" class="sprunglink">Zu den AmazonVideo Filtern</a>
+    </div>
+    
+    
+    <nav class="invisible">
+        <h1>Barrierefreie Navigation</h1>
+        <a href="index.html"><h1>Zu Amazon Prime</h1><span>(ausgewählt)</span></a>
+        <a href="home.html"><h1>AmazonVideo Home</h1></a>
+        <a href="watchlist.html"><h1>AmazonVideo Watchlist</h1></a>
+        <a href="bibliothek.html"><h1>AmazonVideo Bibliothek</h1></a>
+        <a href="Einstellungen.html"><h1>AmazonVideo Einstellungen</h1></a>
+        <a href="soGehts.html"><h1>AmazonVideo So geht's</h1></a>
+        <a href="Hilfe.html"><h1>AmazonVideo Hilfe</h1></a>
+        
+        <a href="HomePrimeVideo.html"><h2>AmazonVideo Home PrimeVideo</h2></a>
+        <a href="homePrimeVideo.html"><h3>AmazonVideo Home PrimeVideo Filter AlleVideos</h3></a>
+        
+        <a href="homePrimeVideo.html"><h2>AmazonVideo Home Prime Originals</h2></a>
+        <a href="homePrimeVideoMeineVideos.html"><h3>AmazonVideo Home PrimeVideo Filter MeineVideos</h3></a>
+        
+        <a href="homePrimeVideo.html"><h2>AmazonVideo Home Serien</h2></a>
+        <a href="homePrimeVideoPrimeProdukte.html"><h3>AmazonVideo Home PrimeVideo Filter EnthaltenInPrime</h3></a>
+        
+        <a href="homePrimeVideo.html"><h2>AmazonVideo Home Filme</h2></a>
+        <a href="homePrimeVideoCannels.html"><h3>AmazonVideo Home PrimeVideo Filter Channels</h3></a>
+        
+        <a href="homePrimeVideo.html"><h2>AmazonVideo Home Kinder</h2></a>
+        <a href="homePrimeVideoKaufenUndLeihen.html"><h3>AmazonVideo Home PrimeVideo Filter Kaufen und Leihen</h3></a>
+    </nav>
+    
+    
+    <nav name="AmazonPrimeNavigation" id="AmazonPrimeNavigation">
+        <a href="index.html"><img src="/assets/AmazonPrimeLogo.png" alt="Amazon Prime - Logo"></a>
+        <a id="showAmazonMenuIcon" style="display: inline;">
+            <i id ="showAmazonNavigationIcon" alt="showAmazonNavigationVisibly" class="fa fa-sort-desc" aria-hidden="true"></i>
+            <i id ="hideAmazonNavigationIcon" alt="hideAmazonNavigationVisibly" class="fa fa-sort-asc" aria-hidden="true"></i>
+        </a>
+        <form>
+              <div class="dropdown">
+                  <button type='button' class="dropbtn">Amazon Video <i alt="showAmazonVideoSearchKagetories" class="fa fa-sort-desc" aria-hidden="true"></i> </button>                      
+                  <div id="dropdown-content">
+                    <a href="">Dokumentationen</a>
+                    <a href="">Filme</a>
+                    <a href="">Serien</a>
+                    <a href="">Kinder</a>
+                  </div>
+                </div> 
+            <input type="text" placeholder="Filme">
+            <a onclick="form.submit();"><img alt="starteSuche" id="searchLogo" src="assets/sucheLogo.png"></a>
+        </form> 
+        <a><img id="werbungObenRechts" src="assets/werbungObenRechts.png"></a>
+    </nav>
+    
+    <nav id="AmazonPrimeNavigationLowerPart">
+        <a href=""><img id="alleKategorien" src="assets/AlleKategorien.PNG"></a>
+        <a href=""><img id="meinAmazonQuickLinks" src="assets/MeinAmazon.png"></a>
+        <a href=""><img id="meinAmazonKontoEinstellungen" src="assets/MeinAmazonKontoEinstellungen.png"></a>
+    </nav>
+
+    <nav name="AmazonVideoNavigation" id="AmazonVideoNavigation">
+        <ul>
+              <li>
+                    <i style="color: #F28500" class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a style="color: #F28500" >Home</a>
+              </li>
+              <li>
+                    <i class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a >Watchlist</a>
+              </li>
+              <li>
+                    <i class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a >Bibliothek</a>
+              </li>
+              <li>
+                    <i class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a >Einstellungen</a>
+              </li>
+              <li>
+                    <i class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a >So geht's</a>
+              </li>
+              <li>
+                    <i class="fa fa-caret-right AmazonVideoNavigationActiveIndicator" aria-hidden="true"></i>
+                    <a >Hilfe</a>
+              </li>
+        </ul>
+    </nav>
+    
+    <div name="Inhalt" id="Content">
+        <nav id="AmazonVideoVideoKategoriesNavigation">
+            <ul>
+                  <li style="border-bottom-color: #F28500">
+                        <a style="color: #F28500">Prime Video</a>
+                  </li>
+                  <li>
+                        <a>Prime Originals</a>
+                  </li>
+                  <li>
+                        <a>Serien</a>
+                  </li>
+                  <li>
+                        <a>Filme</a>
+                  </li>
+                  <li>
+                        <a>Kinder</a>
+                  </li>
+            </ul>
+        </nav>
+        
+        <form name="AmazonVideoFilter" id="AmazonVideoFilter">
+            <div class="FilterContainer">
+                <input class="filterRadioButtons" name="VideoFilter" type="radio" checked="checked">
+                <label style="color: #F28500">Alle Videos</label>
+            </div>
+
+            <div class="FilterContainer">
+                <input class="filterRadioButtons" name="VideoFilter" type="radio">
+                <label>Meine Videos</label>                
+            </div>
+            
+            <div class="FilterContainer">
+                <input class="filterRadioButtons" name="VideoFilter" type="radio">
+                <label>Enthalten in Prime</label>                
+            </div>
+            <div class="FilterContainer">
+                <input class="filterRadioButtons" name="VideoFilter" type="radio">
+                <label>Channels</label>                
+            </div>        
+            <div class="FilterContainer">
+                <input class="filterRadioButtons" name="VideoFilter" type="radio">
+                <label>Kaufen und Leihen</label>                
+            </div>
+        </form>    
+        
+        <div id="ThumbnailContainer">
+            <div class="ThumbnailReihe">
+                <div class="ThumbnailKategorie">
+                    Mein Programm
+                </div>
+                <div class="ThumbnailNachLinks">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                </div>                
+                <div class="Thumbnails">
+                    <img src="assets/MeinProgramm.png">
+                </div>
+                <div class="ThumbnailNachRechts">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div> 
+            </div>
+            <div class="ThumbnailReihe">
+                <div class="ThumbnailKategorie">
+                    Filmkategorien
+                </div>
+                <div class="ThumbnailNachLinks">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                </div>  
+                <div class="Thumbnails">
+                    <img src="assets/FilmGenres.png">
+                </div>
+                <div class="ThumbnailNachRechts">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div> 
+            </div>
+        </div>       
+        
+    </div>     
+
+</body>
+
+</html>

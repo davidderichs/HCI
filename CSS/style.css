@@ -1,0 +1,367 @@
+
+* {
+    font-family: arial;
+    box-sizing: border-box;
+    font-size: 12pt;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/*** Barrierefreie Navigation ***/ 
+.invisible{
+    position: absolute;
+    left: -1000px;
+    font-size: 0px;
+}
+
+a.sprunglink{
+    position:relative;
+    left: -99999px;
+}
+
+a.sprunglink:focus{
+    position: absolute;
+    left: 0px;
+}
+
+
+/**** START ---- AMAZON NAVIGATION ****/
+#werbungObenRechts{
+    top: 10px;
+    right: 0;
+    position: absolute;
+    max-width: 350px;
+    display: inline-block;
+}
+
+#AmazonPrimeNavigation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #06172E;
+    color: white;
+}
+
+#hideAmazonNavigationIcon{
+    display: none;
+    top: 5px;
+    position: absolute;
+    color: white;
+}
+
+#showAmazonNavigationIcon{
+    position: absolute;
+    top: 0px;
+    color: white;
+}
+
+#AmazonPrimeNavigation > i:hover {
+    cursor: pointer;
+}
+
+#showAmazonMenuIcon{
+    display: inline;
+    position: absolute;
+    margin-top: 20px;
+    left: 160px;
+    cursor: pointer;
+}
+
+
+#AmazonPrimeNavigation form {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    min-width: 800px;
+    margin: 0;
+}
+
+#AmazonPrimeNavigation form input {
+    position: absolute;
+    min-width: 45%;
+    left: -3%;
+    min-height: 30px;
+}
+
+#searchLogo{
+    display: inline;
+    position: absolute;
+    margin-left: 41%;
+    max-width: 37px;
+}
+
+.dropbtn {
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    height: 30px;
+    margin: 0;
+    font-size: 70%;
+}
+
+.dropdown {
+    z-index:100;
+    position: absolute;
+    display: inline-block;
+    left:-15%;
+}
+
+.dropdown i{
+    display: inline;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2F2F2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-content a {
+    z-index: inherit;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-content a:hover {
+    color: #F28500;
+}
+
+#AmazonPrimeNavigationLowerPart{
+    display: none;    
+    position: absolute;
+    top: 57px;
+    width: 100%;
+    left: 0;    
+    z-index: 80;
+    background-color: #06172E !important;
+    color: white;
+    padding-left: 310px;
+    height: 40px;
+}
+
+#meinAmazonKontoEinstellungen {
+    max-height: 30px;
+    position: absolute;
+    right: 1px;
+}
+
+#meinAmazonQuickLinks{
+    max-height: 30px;
+    position: fixed;
+    left: 319px;
+}
+
+#alleKategorien{
+    position: absolute;
+    left: 20px;
+}
+/**** ENDE ---- AMAZON NAVIGATION ****/
+
+/**** START ---- AmazonVideo NAVIGATION ****/
+#AmazonVideoNavigation{
+    z-index: 20;
+    position: absolute;
+    top: 8%;
+    width: 100%;
+}
+#AmazonVideoNavigation ul{
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    padding-top: 15px;
+    width: 100%;
+}
+
+#AmazonVideoNavigation ul li{
+    display: inline-block;
+    min-width: 16%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#AmazonVideoNavigation ul li:hover a{
+    color: #F28500 !important;
+}
+
+#AmazonVideoNavigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.AmazonVideoNavigationActiveIndicator{    
+    color: white;
+}
+/**** END ---- AmazonVideo NAVIGATION ****/
+
+/**** START ---- AmazonVideoKategorien NAVIGATION ****/
+#Content{
+    position: absolute;
+    top: 18%;
+    left: 0;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background-color: #06172E;
+}
+#AmazonVideoVideoKategoriesNavigation{
+    padding: 1%;
+}
+
+#AmazonVideoVideoKategoriesNavigation ul li a{
+    color: lightgrey;
+    text-decoration: none;
+}
+
+#AmazonVideoVideoKategoriesNavigation ul li{
+    display: inline-block;
+    min-width: 16%;
+    text-align: center;
+    border: 3px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-style: solid;    
+}
+
+#AmazonVideoVideoKategoriesNavigation ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+#AmazonVideoVideoKategoriesNavigation ul li:hover a{
+    color: #F28500;
+}
+
+#AmazonVideoVideoKategoriesNavigation ul li:hover{
+    cursor: pointer;
+    border-bottom-color: #F28500;
+}
+/**** END ---- AmazonVideoKategorien NAVIGATION ****/
+
+
+
+/**** START ---- Video Filter ****/
+#AmazonVideoFilter{
+    margin-bottom: 0J;
+    padding: 1%;
+    background-color: #ffffff3b;
+}
+.FilterContainer {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    cursor:pointer;
+}
+
+.FilterContainer:hover label{
+    color: #F28500;
+}
+
+.FilterContainer label{
+    color: white;
+    display: block;
+    margin-top: 1%;
+    cursor:pointer;
+}
+
+.FilterContainer button{
+    display: block;
+    cursor:pointer;
+}
+/**** END ---- Video Filter  ****/
+
+
+#ThumbnailContainer {
+    display: block;
+}
+
+.ThumbnailReihe {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    height: 25%;
+    max-width: 100%;
+}
+
+.ThumbnailKategorie{
+    margin-left: 1%;
+    flex: 1;
+    height: 100%;
+    min-width: 15%;
+    padding: 1%;
+    background-color: white;
+}
+
+.ThumbnailNachLinks{
+    padding-left: 4%;
+    flex: 0.2;
+}
+
+.ThumbnailNachLinks i{
+    font-size: 350% !important;
+    color: white;
+}
+
+
+.Thumbnails {
+    flex: 6;
+}
+
+.Thumbnails img{
+    flex: 1;
+    height: 100%;
+    max-width: 99%;
+}
+
+.ThumbnailNachRechts{
+    padding-right: 14%;
+    flex: 0.2;
+}
+
+.ThumbnailNachRechts i{
+    font-size: 350% !important;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
